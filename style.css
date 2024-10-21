@@ -1,0 +1,165 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: #919191;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  outline-color: transparent;
+  color: white;
+}
+
+h1 {
+  font-size: xx-large;
+}
+
+
+
+/*This is the 3 options at the front of the page*/
+
+.options {
+  width: auto;
+  height: auto;
+  color: white;
+  font-size: large;
+}
+
+#o1 {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+#o2 {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+#o3 {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.model {
+  background-color: #5a5a5a;
+}
+
+
+.Model {
+  background-color: #5a5a5a;
+  border-color: transparent;
+  border-radius: 15px;
+  width: 200px;
+  height: 100px;
+  color: white;
+  font-size: x-large;
+}
+
+.print_now {
+  background-color: #5a5a5a;
+  border-color: transparent;
+  border-radius: 15px;
+  width: 200px;
+  height: 100px;
+  color: white;
+  font-size: x-large;
+  margin: 25px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.print_now:visited {
+  background-color: #5a5a5a;
+  border-color: transparent;
+  border-radius: 15px;
+  width: 200px;
+  height: 100px;
+  color: white;
+  font-size: x-large;
+  text-decoration: none;
+  margin: 25px;
+}
+
+.print_now:hover {
+  background-color: #5a5a5a;
+  border-color: transparent;
+  border-radius: 15px;
+  width: 200px;
+  height: 100px;
+  color: white;
+  font-size: x-large;
+  text-decoration: none;
+}
+
+input[type="file-upload-button"] {
+  background-color: #5a5a5a;
+  border-color: transparent;
+  border-radius: 15px;
+  width: 200px;
+  height: 100px;
+  color: white;
+  font-size: x-large;
+  text-decoration: none;
+}
+
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  content: 'Select Your 3d Files';
+  background-color: #5a5a5a;
+  border-color: transparent;
+  border-radius: 5px;
+  width: 250px;
+  height: 350px;
+  color: white;
+  font-size: large;
+  text-decoration: none;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.top1 {
+    position: absolute;
+    top: 18.5%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .top2 {
+    position: absolute;
+    top: 18.5%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  footer {
+    background-color: #8b8b8b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

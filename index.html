@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheNothingClub</title>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+
+    <!-- Custom Style -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1a1a1a;
+            margin: 0;
+            padding: 0;
+            color: #ddd;
+            scroll-behavior: smooth;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        h1, h2, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        /* Style for buttons and image containers */
+        .options {
+            display: inline-block;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+            background-color: #2a2a2a;
+            width: 300px;
+            height: 350px;
+            text-align: center;
+            vertical-align: top;
+            cursor: pointer;
+        }
+
+        .options img {
+            width: auto;
+            height: 200px;
+            border-radius: 8px;
+            max-width: 100%;
+            object-fit: cover;
+        }
+
+        .options:hover {
+            box-shadow: 0 10px 20px rgba(0,0,0,0.8);
+            transform: scale(1.05);
+        }
+
+        button a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        button {
+            background-color: #2c3e50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #1a2736;
+        }
+
+        /* Section Styles */
+        .content-section {
+            background-color: #2a2a2a;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: #bbb;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+    <script>
+        // Scroll smoothly to section when a button is clicked
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+</head>
+<body>
+    <div class="container">
+        <h1 style="color: #fff;">TheNothingClub</h1>
+        <nav>
+            <!-- Image buttons -->
+            <button class="options" onclick="scrollToSection('section1')"><img src="/images/Web_Develoment-removebg-preview.png" alt="Web Development"></button>
+            <button class="options" onclick="scrollToSection('section2')"><img src="/images/image_2024-10-21_144709517-removebg-preview.png" alt="3D Modeling"></button>
+            <button class="options" onclick="scrollToSection('section3')"><img src="/images/Screenshot_2024-08-11_201135-removebg-preview.png" alt="3D Printing"></button>
+        </nav>
+
+        <!-- Section 1: Web Development -->
+        <div id="section1" class="content-section">
+            <h1 style="color: #fff;">Web Development</h1>
+            <h2 style="color: #ccc;">Get a custom designed website tailored to your needs.</h2>
+            <p>We offer a wide range of web development services:</p>
+            <ul>
+                <li>Custom website design and development</li>
+                <li>E-commerce solutions</li>
+                <li>Responsive web design</li>
+                <li>Website maintenance</li>
+            </ul>
+        </div>
+
+        <!-- Section 2: 3D Modeling & Printing -->
+        <div id="section2" class="content-section">
+            <h1 style="color: #fff;">Affordable 3D Modeling and Printing</h1>
+            <p style="color: #ddd;">Explore our affordable 3D printing and modeling services. Choose from our custom design or submit your own!</p>
+            <form method="POST" action="https://formsubmit.co/thenothingclub1@gmail.com" enctype="multipart/form-data" onsubmit="return checkFileSize()">
+                <input type="email" name="email" placeholder="Your email" required>
+                <input class="custom-file-input" type="file" id="fileInput" name="attachment" accept=".stl, .amf, .obj, .zip" required>
+                <input type="hidden" name="_captcha" value="false">
+                <button type="submit">Send</button>
+            </form>
+        </div>
+
+        <!-- Section 3: 3D Print Now -->
+        <div id="section3" class="content-section">
+            <h1 style="color: #fff;">3D Print Now!</h1>
+            <form method="POST" action="https://formsubmit.co/thenothingclub1@gmail.com" enctype="multipart/form-data" onsubmit="return checkFileSize()">
+                <input type="email" name="email" placeholder="Your email" required>
+                <input class="custom-file-input" type="file" id="fileInput" name="attachment" accept=".stl, .amf, .obj, .zip" required>
+                <input type="hidden" name="_captcha" value="false">
+                <button type="submit">Send</button>
+            </form>
+            <h2 style="color: #ccc;">Don't know what to print? Try these:</h2>
+            <ul>
+                <li>Custom Phone Case</li>
+                <li>Custom Phone Stand</li>
+                <li>Custom Keychain</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 TheNothingClub. All rights reserved.</p>
+        <p><a href="privacypolicy.html">Privacy Policy</a> | <a href="ToS.html">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
